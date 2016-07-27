@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AccountMasterPage.master.cs" Inherits="Account_AccountMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div>
+            <link href="../Style/General.css" rel="stylesheet" />
+             <asp:ContentPlaceHolder ID="menu" runat="server">
+                    <link href="Style/General.css" rel="stylesheet" type="text/css" runat="server" />
+                    <link href="~/Style/General.css" rel="stylesheet" type="text/css" runat="server" />
+                    <div class="main">
+                        <!-- id styles are created using #"idName" -->
+                        <!-- Ids and Classes that span multiple pages should be kept in the general 
+            CSS each page may have its on CSS page-->
+                        <!--The Genreal Css page should be included on all of the pages -->
+                        <div id="imageDiv">
+                            <asp:Image runat="server" AlternateText="Placeholder" CssClass="Banner" />
+                        </div>
+                        <hr class="topBar" />
+                        <div id="menuBar">
+                            <!-- class styles are created using ."className" in css-->
+                            <ul class="menuList">
+                                <!-- Link these pages if to the current pages in the website folder do no link to any employee page 
+                     other then the default if there are to few few pages leave the leftovers alone if not enought just copy and past-->
+                                <li class="listItem"><a href="../Default.aspx" class="menuLink">Home</a></li>
+                                <li class="listItem"><a href="../products.aspx" class="menuLink">Shop</a>
+                                     <ul class="menuList">
+                                    <li class="listItem"><asp:Hyperlink CssClass="subcats" runat="server" href='../products.aspx?source="bookssearch"'>Books</asp:Hyperlink></li>
+                                    <li class="listItem"><asp:Hyperlink CssClass="subcats" runat="server" href='../products.aspx?source="moviesearch"'>Movies</asp:Hyperlink></li>
+                                    <li class="listItem"><asp:Hyperlink CssClass="subcats" runat="server" href='../products.aspx?source="collectablesearch"'>Collectables</asp:Hyperlink></li>
+                                    <li class="listItem"><asp:Hyperlink CssClass="subcats" runat="server" href='../products.aspx?source="clothessearch"'>Clothes</asp:Hyperlink></li>
+                                </ul>
+                                </li>
+                                <li class="listItem"><a href="../subscriptionPage.aspx" class="menuLink">Book Bag</a></li>
+                                <li class="listItem"><a href="Account.aspx" class="menuLink">My Account</a></li>
+                                <li class="listItem"><a href="../cart.aspx" class="menuLink">Cart</a></li>
+                                <li class="listItem"><a href="../aboutUs.aspx" class="menuLink">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="midBar" />
+                    
+                  <table>
+                        <tr>
+                            <td>
+                                <asp:Label runat="server" Text="" ID="logLabel"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:Button runat="server" PostBackUrl="~/Login.aspx" ID="loginBut" Visible="false" Text="Login" />
+                                <asp:Button runat="server" OnClick="logoff_click" ID="logoffBut" Visible="false" Text="Log off" />
+                            </td>
+                        </tr>
+                    </table>
+
+                </asp:ContentPlaceHolder>
+        </div>
+        <div class="body">
+            <asp:ContentPlaceHolder id="body" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        </div>
+    </div>
+    </form>
+</body>
+</html>

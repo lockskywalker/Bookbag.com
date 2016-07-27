@@ -1,0 +1,222 @@
+﻿/* Please Refrain From editing this page
+    All css will have to be done with CSSClass 
+*/
+/*Master page styles
+
+*/
+html{
+    background-color:#bfbfbf;
+}
+body{
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#ffffff;
+}
+.txtBox{
+    border-style:solid;
+    border-color:black;
+}
+
+/*
+    To be used on all pages 
+    <link rel="stylesheet" href="../Style/General.css" />
+*/
+/*
+    Classes are done .ClassName
+    idNames are done #IDName
+*/
+.main{
+    margin-top:1%;
+
+}
+.Banner{
+ width:1000px;
+ height:150px;
+ margin-bottom:-4px;
+}
+
+.bannerpanel{
+    width:auto;
+    height:35px;
+    background-color:#000049;
+    color:#e64f00;
+}
+
+/*Start of menu barv*/
+
+/*ul*/
+.menuList{
+  text-align: left;
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  list-style: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+/*li*/
+.listItem{
+    
+  text-align:center;
+  margin-right: -4px;
+  font-family:Britannic;
+  height: 30px;
+  width:126.68px;
+  background-color:#000049;
+  display: inline-block;
+  position: relative;
+  padding: 15px 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.listItem:hover{
+  background: #e64f00;
+  color: #000049;
+  
+}
+.subcats{
+    color:#e64f00;
+    text-decoration: none;
+    font-size:20px;
+}
+.subcats:hover{
+    color:#000049;
+    text-decoration: none;
+    font-size:20px;
+}
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility:hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+ul li ul li { 
+ background-color:#000049; 
+  display: block; 
+  color: #e64f00;
+  text-shadow: 0 -1px 0 #000;
+}
+ul li ul li:hover { 
+  background: #e64f00; 
+   visibility: visible;
+}
+
+ul li:hover ul{
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/*inside li*/
+.menuLink{
+    text-decoration:none;
+    color:#e64f00;
+    font-size:x-large
+}
+.menuLink:hover{
+    color:#000049;
+}
+/*End of menu bar*/
+
+
+.imageBttn{
+    height:100px;
+    width: 100px;
+}
+.loginStatus{
+    width:100px;
+    margin-top:2%;
+    margin-right:auto;
+}
+
+.footer{
+    text-decoration:none;
+    
+}
+#logOffBttn{
+    border-style:none;
+    margin-bottom:-1px;
+    padding-bottom:-1px;
+    margin-left:20px;
+}
+.midBar{
+    background-color:#000000;
+}
+/* used by Account and Sign-up aspx
+
+*/
+.editableTable{
+    width: 85%;
+    margin-left:auto;
+    margin-right:auto;
+    border:solid;
+    border-color:black;
+}
+
+/*Buttons*/
+.basicbut{
+    border: 0px solid;
+    border-radius: 20px;
+	background-color:#e64f00;
+	color:#000049;
+    padding:5px;
+	font-size:12px;
+	font-weight:700;
+	
+}
+.tblBttns{
+   
+    
+}
+#error1{
+    color:red;
+    
+}
+.editableTableDDL{
+    width:100px;
+}
+/*Account_setPreferrence*/
+.bttns{
+    width:150px;
+    margin-left:10%;
+}
+
+.footpanel{
+    width:auto;
+    height:100px;
+    background-color:#000049;
+    color:#000049;
+}
+.footer{
+    color:#e64f00;
+}
+.socialbuts{   
+    float:right;
+    width: 102px;
+}
+.social{
+    height:30px;
+    width:30px;
+    padding: 2px 2px 2px 2px;
+}
+.bodydiv{
+    padding-bottom:200px;
+}

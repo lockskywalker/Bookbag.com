@@ -1,0 +1,15 @@
+﻿body {
+}
+.cartView{
+    width:300px;
+}
+.priceInfo{
+    float:right;
+}
+.cartListView{
+    float:left;
+}
+.header{
+    color:#e64f00;
+    background-color:#000049;
+}

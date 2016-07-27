@@ -1,0 +1,30 @@
+﻿body {
+}
+.uneditableTableUET{
+    width: 75%;
+    height: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+.editBttn{
+    margin-left:50%;
+    margin-right:10px;
+}
+.saveBttn{
+    margin-left:50%;
+    margin-right:10px;
+}
+.editableTableDDL{
+    width:700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.updateBttns{
+    float:right;
+}
+.cardTbl{
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}

@@ -1,0 +1,45 @@
+﻿body {
+    
+}
+
+.tblCell{
+    width:150px;
+    height:150px;
+    align-content:center;
+}
+.homeTbl{
+    width: 400px;
+    margin-left:25%;
+}
+.header{
+    font-family:Britannic;
+    margin:auto;
+    width: 13%;
+    padding-top:20px;
+    padding-bottom:50px;
+    color:#000049;
+}
+.homeheader{
+    font-size:50px;
+}
+.homeTbl{
+  
+}
+.cell{
+    margin-left:auto;
+}
+.tblCell{
+   font-family:Britannic;
+ 
+}
+.link{
+ padding-left:15%;
+}
+.links{
+    text-decoration:none;
+    color:#000049;
+    margin:auto;
+}
+.cell{
+    padding-left:10%;
+}

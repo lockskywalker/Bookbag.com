@@ -1,0 +1,29 @@
+﻿body{
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#ffffff;
+}
+#invoiceTbl{
+    
+    border-style:solid;
+}
+.invoicePnl{
+    margin-left:auto;
+    margin-right:auto;
+    height:500px;
+
+
+}
+.priceTbl{
+    float:right;
+}
+.logo{
+    margin-top:5%;
+    
+}
+.lineItemsView{
+    width:475px;
+    margin-left:auto;
+    margin-right:auto;
+}

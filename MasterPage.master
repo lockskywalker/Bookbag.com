@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <link href="Style/Login.css" rel="stylesheet" type="text/css" runat="server" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div>
+                <asp:ContentPlaceHolder ID="menu" runat="server">
+                    <link href="Style/General.css" rel="stylesheet" />
+                    <div class="main">
+                        <!-- id styles are created using #"idName" -->
+                        <!-- Ids and Classes that span multiple pages should be kept in the general 
+            CSS each page may have its on CSS page-->
+                        <!--The Genreal Css page should be included on all of the pages -->
+                        
+                            <asp:Image runat="server" AlternateText="Placeholder" ImageUrl="~/Images/text4697.png" CssClass="Banner" />                      
+                        <asp:Panel CssClass="bannerpanel" runat="server">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <asp:Label runat="server" Text="Welcome! "></asp:Label>
+                                        <asp:HyperLink NavigateUrl="Account/Account.aspx" runat="server" Text="" ID="logLabel"></asp:HyperLink>
+                                    </td>
+                                    <td>
+                                        <asp:Button CssClass="basicbut" runat="server" PostBackUrl="~/Login.aspx" ID="loginBut" Visible="false" Text="Login" />
+                                        <asp:Button CssClass="basicbut" runat="server" OnClick="logoff_click" ID="logoffBut" Visible="false" Text="Log off" />
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </asp:Panel>
+                        <!-- class styles are created using ."className" in css-->
+                        <ul class="menuList">
+                            <!-- Link these pages if to the current pages in the website folder do no link to any employee page 
+                     other then the default if there are to few few pages leave the leftovers alone if not enought just copy and past-->
+                            <li class="listItem"><a href="default.aspx" class="menuLink">Home</a></li>
+                            <li class="listItem"><a href='products.aspx?source="productsSource"' class="menuLink">Shop</a>
+                                <ul class="menuList">
+                                    <li class="listItem"><asp:Hyperlink CssClass="subcats" runat="server" href='products.aspx?source="bookssearch"'>Books</asp:Hyperlink></li>
+                                    <li class="listItem"><asp:Hyperlink CssClass="subcats" runat="server" href='products.aspx?source="moviesearch"'>Movies</asp:Hyperlink></li>
+                                    <li class="listItem"><asp:Hyperlink CssClass="subcats" runat="server" href='products.aspx?source="collectablesearch"'>Collectables</asp:Hyperlink></li>
+                                    <li class="listItem"><asp:Hyperlink CssClass="subcats" runat="server" href='products.aspx?source="clothessearch"'>Clothes</asp:Hyperlink></li>
+                                </ul>
+                            </li>
+                            <li class="listItem"><a href="subscriptionPage.aspx" class="menuLink">Book Bag</a></li>
+                            <li class="listItem"><a href="Account/Account.aspx" class="menuLink">My Account</a></li>
+                            <li class="listItem"><a href="cart.aspx" class="menuLink">Cart</a></li>
+                            <li class="listItem"><a href="aboutUs.aspx" class="menuLink">About Us</a></li>
+                        </ul>
+                    </div>
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="body">
+                <asp:ContentPlaceHolder ID="body" runat="server">
+                    <div>
+                    </div>
+                </asp:ContentPlaceHolder>
+            </div>
+            <div>
+            </div>
+
+        </div>
+    </form>
+    <asp:ContentPlaceHolder ID="footer" runat="server">
+
+        <a  class="footer" href="employeeLogin.aspx">Employees</a>
+
+    </asp:ContentPlaceHolder>
+
+</body>
+</html>
